@@ -1,4 +1,27 @@
 <div>
-  <p>post3 works!</p>
+  <p class='text'>post3 works!</p>
+  <button (click)="toggleButton = !toggleButton">Click me!!</button>
+  <!-- <ul>
+    <li *ngFor="let xxx of arr; let idx = index" [ngClass]="{
+      white: xxx%2 === 0,
+      black: xxx%2 !== 0
+    }">
+     {{idx +1}} <strong>{{xxx}}</strong>
+    </li>
+  </ul> -->
+  <ul>
+    <li *ngFor="let post of obj">
+      <p>{{post.title}} <b>{{post.autor}}</b></p>
+      <ul>
+        <li *ngFor="let comment of post.comments">
+          <div>
+            <small>{{comment.name}}</small>
+            <p>{{comment.comment}}</p>
+          </div>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
 </div>
 

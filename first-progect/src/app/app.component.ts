@@ -10,21 +10,18 @@ export class AppComponent {
 
   title = 'Dynamic style';
   number = [44, 34 , 43, 43];
-
-  obj = {a: 'hello', b: 'aleksei'}
-  inputValue = ''
-
+  obj = {a: 'hello', b: 'aleksei'};
+  inputValue = '';
 
   constructor(){
 
   }
-  onInput(event: Event ){
-    // console.log(event)
-    if(event!== null){
-      this.inputValue = (<HTMLInputElement>event.target).value
+  // onInput(event: Event ){
+  //   // console.log(event)
+  //   if(event!== null){
+  //     this.inputValue = (<HTMLInputElement>event.target).value
+  //   }
+  // }
 
-    }
-
-  }
 
 }

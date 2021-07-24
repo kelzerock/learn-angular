@@ -1,10 +1,11 @@
 import { PostComponent } from './post/post.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { Post2Component } from './post2/post2.component';
 import { Post3Component } from './post3/post3.component';
+import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -12,10 +13,11 @@ import { Post3Component } from './post3/post3.component';
     AppComponent,
     PostComponent,
     Post2Component,
-    Post3Component
+    Post3Component,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
