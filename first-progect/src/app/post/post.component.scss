@@ -1,10 +1,8 @@
 .post {
-  width: 450px;
-  margin-bottom: 1rem;
-  border: dashed black 1px;
-  padding: 1rem;
-
-  p {
-    font-weight: 500;
-  }
+  border: solid black 1px;
+  border-radius: 5px;
+  padding: .5rem 1rem;
+  background-color: wheat;
+  max-width: 800px;
+  margin: .5rem 0;
 }
