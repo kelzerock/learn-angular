@@ -1,16 +1,9 @@
-body {
-  font-size: 1rem;
-  line-height: 1.6;
-  background-color: #fff;
-  color: #333;
+p {
+  font-size: 1.5rem;
 }
 
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding-top: 1rem;
-}
-
-hr {
-  max-width: 800px;
+.wrap {
+  border: dashed 2px black;
+  background-color: burlywood;
+  padding: 10px;
 }

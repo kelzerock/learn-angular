@@ -3,9 +3,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
-import { PostFormComponent } from './post-form/post-form.component';
-import { PostComponent } from './post/post.component';
-import { BoxComponent } from './post/box/box.component';
+import { StyleDirective } from './directives/style.directive';
+import { NoifDirective } from './directives/noif.directive';
+
 
 
 
@@ -13,9 +13,8 @@ import { BoxComponent } from './post/box/box.component';
 @NgModule({
   declarations: [
     AppComponent,
-    PostFormComponent,
-    PostComponent,
-    BoxComponent
+    StyleDirective,
+    NoifDirective,
   ],
   imports: [
     BrowserModule,
