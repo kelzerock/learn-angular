@@ -1,27 +1,25 @@
 import { Component } from '@angular/core';
 
+export interface Post {
+  title: string;
+  text: string;
+  id?: number;
+}
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  posts: Post[] = [
+    { title: 'need learn angular', text: 'i learn angular', id: 1 },
+    { title: 'need learn react', text: 'i learn react', id: 2 },
+    { title: 'what do you do', text: 'Hello, what happend?', id: 3}
+  ];
 
-  title = 'Dynamic style';
-  number = [44, 34 , 43, 43];
-  obj = {a: 'hello', b: 'aleksei'};
-  inputValue = '';
-
-  constructor(){
-
+  updatePost(post: Post){
+    this.posts.unshift(post);
+    console.log(post)
   }
-  // onInput(event: Event ){
-  //   // console.log(event)
-  //   if(event!== null){
-  //     this.inputValue = (<HTMLInputElement>event.target).value
-  //   }
-  // }
-
-
 }

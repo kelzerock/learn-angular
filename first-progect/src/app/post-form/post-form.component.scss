@@ -1,14 +1,21 @@
-.input {
-  display: block;
-  margin: 1rem .5rem;
-  width: 80%;
-  max-width: 800px;
+.form-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  max-width: 300px;
+
+  .form-control {
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    background-color: black;
+    color: #fff;
+    width: 100px;
+    padding: 10px;
+    margin-bottom: 1rem;
+  }
 }
-.btn {
-  margin: 1rem .5rem;
-  background-color: darkslategray;
-  color: white;
-  padding: 0.5rem 1rem;
-  text-transform: uppercase;
-  font-weight: 600;
-}
+
+
+

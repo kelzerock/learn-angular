@@ -1,9 +1,11 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { PostFormComponent } from './post-form/post-form.component';
 import { PostComponent } from './post/post.component';
+import { BoxComponent } from './post/box/box.component';
 
 
 
@@ -13,6 +15,7 @@ import { PostComponent } from './post/post.component';
     AppComponent,
     PostFormComponent,
     PostComponent,
+    BoxComponent
   ],
   imports: [
     BrowserModule,
